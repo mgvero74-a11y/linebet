@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#050505" />
+    <meta
+      name="description"
+      content="Play games of chance on the most reliable platform - Linebet!"
+    />
+    <title>Linebet</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              'green-custom': '#00C853',
+              'green-dark': '#009624',
+              'green-light': '#69F0AE',
+              'black-custom': '#1a1a1a',
+              'gray-bg': '#0A0A0A',
+            },
+            fontFamily: {
+              sans: ['Inter', 'sans-serif'],
+            },
+            boxShadow: {
+              'glow': '0 0 20px rgba(0, 200, 83, 0.3)',
+              'glass': '0 8px 32px 0 rgba(0, 0, 0, 0.37)',
+            },
+            animation: {
+              'float': 'float 6s ease-in-out infinite',
+              'float-delayed': 'float 6s ease-in-out 3s infinite',
+              'fade-in': 'fadeIn 0.5s ease-out forwards',
+              'shimmer': 'shimmer 2.5s infinite',
+              'pulse-slow': 'pulseSlow 4s ease-in-out infinite',
+              'subtle-bounce': 'subtleBounce 3s ease-in-out infinite',
+              'heartbeat': 'heartbeat 2s infinite',
+            },
+            keyframes: {
+              float: {
+                '0%, 100%': { transform: 'translateY(0)' },
+                '50%': { transform: 'translateY(-10px)' },
+              },
+              fadeIn: {
+                '0%': { opacity: '0', transform: 'translateY(10px)' },
+                '100%': { opacity: '1', transform: 'translateY(0)' },
+              },
+              shimmer: {
+                '0%': { transform: 'translateX(-100%) skewX(-12deg)' },
+                '100%': { transform: 'translateX(200%) skewX(-12deg)' },
+              },
+              pulseSlow: {
+                '0%, 100%': { transform: 'scale(1)', opacity: '0.05' },
+                '50%': { transform: 'scale(1.2)', opacity: '0.1' },
+              },
+              subtleBounce: {
+                '0%, 100%': { transform: 'translateY(0)' },
+                '50%': { transform: 'translateY(-6px)' },
+              },
+              heartbeat: {
+                '0%, 100%': { transform: 'scale(1)' },
+                '50%': { transform: 'scale(1.05)' },
+              }
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      :root {
+        --green: #00C853;
+        --green-d: #009624;
+        --black: #1a1a1a;
+      }
+      
+      body {
+        margin: 0;
+        font-family: 'Inter', sans-serif;
+        background-color: #050505;
+        color: #ffffff;
+        overflow-x: hidden;
+      }
+      
+      /* Smooth scrolling */
+      html {
+        scroll-behavior: smooth;
+        scrollbar-width: none; /* Firefox */
+        -ms-overflow-style: none; /* IE/Edge */
+      }
+
+      /* Hide scrollbar for Chrome/Safari/Opera */
+      ::-webkit-scrollbar {
+        display: none;
+      }
+
+      /* Scroll Animation Classes */
+      .reveal-on-scroll {
+        opacity: 0;
+        transform: translateY(30px);
+        transition: opacity 1s cubic-bezier(0.5, 0, 0, 1), transform 1s cubic-bezier(0.5, 0, 0, 1);
+        will-change: opacity, transform;
+      }
+      
+      .reveal-visible {
+        opacity: 1;
+        transform: translateY(0);
+      }
+
+      /* Dynamic Content Styling */
+      .liSpan {
+        display: block;
+        margin-bottom: 0.6rem;
+        position: relative;
+        padding-left: 1.25rem;
+        font-size: 0.95rem;
+        line-height: 1.5;
+        color: #9ca3af;
+      }
+      .liSpan::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0.6em;
+        width: 6px;
+        height: 6px;
+        border-radius: 50%;
+        background-color: var(--green);
+      }
+      
+      .directionRtl {
+        direction: rtl;
+        display: inline-block;
+      }
+    </style>
+
+<link rel="stylesheet" href="/index.css">
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@^19.2.3",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "lucide-react": "https://esm.sh/lucide-react@^0.561.0",
+    "path": "https://esm.sh/path@^0.12.7",
+    "@vitejs/plugin-react": "https://esm.sh/@vitejs/plugin-react@^5.1.2",
+    "vite": "https://esm.sh/vite@^7.2.7",
+    "react-dom": "https://esm.sh/react-dom@^19.2.3"
+  }
+}
+</script>
+  <script type="module" crossorigin src="/assets/index-CtsDkDo2.js"></script>
+</head>
+  <body>
+    <div id="root"></div>
+</body>
+</html>
